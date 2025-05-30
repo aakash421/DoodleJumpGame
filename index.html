@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Doodle Jump</title>
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+</head>
+<body>
+  <div id="game-container"></div>
+  <py-script>
+    from pyodide.http import pyfetch
+    import asyncio
+    # Import your game code
+    exec(open("doodlejump.py").read())
+  </py-script>
+</body>
+</html>
